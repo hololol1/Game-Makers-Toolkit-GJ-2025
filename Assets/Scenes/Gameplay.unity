@@ -147,7 +147,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: bade133cbbe79f14d8fac76ab79d1f25, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 06b5e3c2385122f49b7e702398c7f024, type: 3}
+  m_Resource: {fileID: 8300000, guid: 65bc760b8f906fc4bbd94951363d9187, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2564,6 +2564,14 @@ MonoBehaviour:
   - {fileID: 8300000, guid: edd1cf4ccc52d0f44a2f03607701ec3d, type: 3}
   - {fileID: 8300000, guid: 0236e09a53fac364c8814e9fc4a221ea, type: 3}
   - {fileID: 8300000, guid: aa91574c78c524f4c94b88a3aa943d97, type: 3}
+  - {fileID: 8300000, guid: c63014f43eab534419744b49942b01ef, type: 3}
+  - {fileID: 8300000, guid: fa7b913537cf566469d4bea36a9c7f45, type: 3}
+  - {fileID: 8300000, guid: f4fe9e6e63a238c4395b02bb93406a3a, type: 3}
+  - {fileID: 8300000, guid: 6375b331f358567489ff42606ac5803b, type: 3}
+  - {fileID: 8300000, guid: e5c7da25addc5594ba694b07478814a3, type: 3}
+  - {fileID: 8300000, guid: 1d4143b3a5e2e154888313a1c265a78a, type: 3}
+  - {fileID: 8300000, guid: 4a2f805d2fb7d8e45aafe240b4d48148, type: 3}
+  - {fileID: 8300000, guid: ac246664febbdd042b51268431f38f7a, type: 3}
   audioSource: {fileID: 1370208499}
   audioSourceKnock: {fileID: 839113409}
 --- !u!4 &1370208501
