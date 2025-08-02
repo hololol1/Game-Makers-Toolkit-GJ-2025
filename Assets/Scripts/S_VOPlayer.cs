@@ -24,7 +24,7 @@ public class S_VOPlayer : MonoBehaviour
         Invoke("StartVOClip", firstVODelay);
     }
 
-    void StartVOClip()
+	void StartVOClip()
 	{
         animator.Play(animNames[Random.Range(0, animNames.Count)]);
         audioSourceKnock.Play();
