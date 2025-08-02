@@ -60,7 +60,7 @@ public class S_CanOpenerLogic : MonoBehaviour
 
     public void RotateCan()
 	{
-        can.rotation = Quaternion.Euler(0, totalAngle * canTurnSpeed, 0);
+        can.localRotation = Quaternion.Euler(0, totalAngle * canTurnSpeed, 0);
     }
 
 	public void Score()
