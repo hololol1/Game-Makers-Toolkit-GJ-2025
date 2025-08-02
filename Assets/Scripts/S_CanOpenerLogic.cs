@@ -20,6 +20,9 @@ public class S_CanOpenerLogic : MonoBehaviour
 
     public ParticleSystem sparks;
 
+    [SerializeField]
+    private Animator animator;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -60,11 +63,16 @@ public class S_CanOpenerLogic : MonoBehaviour
 			{
                 sparks.Play();
             }
+            if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Opener_Idle"))
+			{
+                animator.Play("Opener_Idle");
+			}
         }
 		else
 		{
             sparks.Stop();
-		}
+            animator.Play("New_State");
+        }
     }
 
     public void RotateCan()

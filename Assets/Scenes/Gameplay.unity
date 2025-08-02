@@ -1006,6 +1006,40 @@ MonoBehaviour:
   audioSlider: {fileID: 1412712555}
   confetti: {fileID: 424716028}
   confetti2: {fileID: 906706675}
+  screenShakeDuration: 0.7
+  shakeAnim:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1.4523284
+      outSlope: 1.4523284
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.17054611
+      value: 0.24768898
+      inSlope: -1.0020999
+      outSlope: -1.0020999
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.078139424
+    - serializedVersion: 3
+      time: 1
+      value: -0.0000038146973
+      inSlope: -0.29862154
+      outSlope: -0.29862154
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!82 &553055493
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3370,7 +3404,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6994981928940288915, guid: a161716181682754d96a29c3e2cb2066, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2036187688}
   m_SourcePrefab: {fileID: 100100000, guid: a161716181682754d96a29c3e2cb2066, type: 3}
 --- !u!1001 &1644016658
 PrefabInstance:
@@ -4140,6 +4177,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1868061135}
   m_CullTransparentMesh: 1
+--- !u!1 &2036187684 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6994981928940288915, guid: a161716181682754d96a29c3e2cb2066, type: 3}
+  m_PrefabInstance: {fileID: 1570265174}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2036187688
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036187684}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 422f44da5bd935e45bc70422f70bbf0d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2054980966
 GameObject:
   m_ObjectHideFlags: 0
@@ -4365,6 +4429,10 @@ PrefabInstance:
       propertyPath: sparks
       value: 
       objectReference: {fileID: 12568327}
+    - target: {fileID: 8041607281713444888, guid: e96bf51c50104e640b33bf1d330a0e9f, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 2036187688}
     - target: {fileID: 8356720727732612243, guid: e96bf51c50104e640b33bf1d330a0e9f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.059

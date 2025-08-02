@@ -3,6 +3,7 @@ using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections;
 
 public class S_UI : MonoBehaviour
 {
@@ -26,6 +27,10 @@ public class S_UI : MonoBehaviour
 	public ParticleSystem confetti;
 	public ParticleSystem confetti2;
 
+	public float screenShakeDuration;
+	public AnimationCurve shakeAnim;
+	private Vector3 startPosition;
+
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	void Start()
     {
@@ -35,7 +40,9 @@ public class S_UI : MonoBehaviour
         {
             audioSlider.value = Mathf.Pow(10, value / 30);
         }
-    }
+
+		startPosition = Camera.main.transform.position;
+	}
 
     // Update is called once per frame
     void Update()
@@ -59,9 +66,25 @@ public class S_UI : MonoBehaviour
 				confetti.Play();
 				confetti2.Play();
 			}
+			StartCoroutine(Shaking());
 			currentScore = score.score;
 			highScore.text = string.Format("Can Rotations: {0}", currentScore);
 		}
+	}
+
+	IEnumerator Shaking()
+	{
+		float timeShake = 0f;
+
+		while (timeShake < screenShakeDuration)
+		{
+			timeShake += Time.deltaTime;
+			float strength = shakeAnim.Evaluate(timeShake / screenShakeDuration);
+			Camera.main.transform.position = startPosition + Random.insideUnitSphere * strength;
+			yield return null;
+		}
+
+		Camera.main.transform.position = startPosition;
 	}
 
 	public void SetVolume()
