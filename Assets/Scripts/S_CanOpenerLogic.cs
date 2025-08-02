@@ -18,6 +18,8 @@ public class S_CanOpenerLogic : MonoBehaviour
     private float changeInAngle;    //Change for scoring
     private float totalAngle;       //Checks currently rotated degrees
 
+    public ParticleSystem sparks;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -54,8 +56,15 @@ public class S_CanOpenerLogic : MonoBehaviour
 			{
                 totalAngle += changeInAngle;
             }
-
+			if (!sparks.isPlaying)
+			{
+                sparks.Play();
+            }
         }
+		else
+		{
+            sparks.Stop();
+		}
     }
 
     public void RotateCan()

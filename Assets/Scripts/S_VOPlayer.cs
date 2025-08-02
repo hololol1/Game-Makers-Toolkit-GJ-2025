@@ -13,6 +13,11 @@ public class S_VOPlayer : MonoBehaviour
     [SerializeField]
     private AudioSource audioSourceKnock;
 
+    [SerializeField]
+    private Animator animator;
+    public List<string> animNames = new List<string>();
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,6 +26,7 @@ public class S_VOPlayer : MonoBehaviour
 
     void StartVOClip()
 	{
+        animator.Play(animNames[Random.Range(0, animNames.Count)]);
         audioSourceKnock.Play();
         audioSource.clip = aiVoiceClips[Random.Range(0, aiVoiceClips.Count)];
         audioSource.Play();

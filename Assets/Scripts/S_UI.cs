@@ -23,9 +23,11 @@ public class S_UI : MonoBehaviour
 
 	private float elapsedTime;
 	private float currentScore;
+	public ParticleSystem confetti;
+	public ParticleSystem confetti2;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+	// Start is called once before the first execution of Update after the MonoBehaviour is created
+	void Start()
     {
         float value;
         bool hasValue = audioMixer.GetFloat("Master", out value);
@@ -54,6 +56,8 @@ public class S_UI : MonoBehaviour
 			else
 			{
 				scoreUp.Play();
+				confetti.Play();
+				confetti2.Play();
 			}
 			currentScore = score.score;
 			highScore.text = string.Format("Can Rotations: {0}", currentScore);
