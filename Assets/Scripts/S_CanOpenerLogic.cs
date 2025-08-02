@@ -41,7 +41,7 @@ public class S_CanOpenerLogic : MonoBehaviour
         angle = (float)Math.Atan2(canOpener.position.y - inputPos.y, canOpener.position.x - inputPos.x) * Mathf.Rad2Deg;
         
         currentAngle = canOpener.transform.eulerAngles.z;
-        canOpener.rotation = Quaternion.Euler(0, 0, angle + 90);
+        canOpener.rotation = Quaternion.Euler(0, 0, angle - 90);
         newAngle = canOpener.transform.eulerAngles.z;
 
         changeInAngle = newAngle - currentAngle;
