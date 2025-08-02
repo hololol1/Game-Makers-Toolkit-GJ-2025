@@ -12,12 +12,17 @@ public class S_UI : MonoBehaviour
 	private TextMeshProUGUI timer;
 	[SerializeField]
 	private TextMeshProUGUI highScore;
+	[SerializeField]
+	private AudioSource scoreUp;
+	[SerializeField]
+	private AudioSource scoreDown;
 
 	public S_CanOpenerLogic score;
     public Slider audioSlider;
 
 
 	private float elapsedTime;
+	private float currentScore;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -26,7 +31,7 @@ public class S_UI : MonoBehaviour
         bool hasValue = audioMixer.GetFloat("Master", out value);
         if (hasValue)
         {
-            audioSlider.value = Mathf.Pow(10, value / 20);
+            audioSlider.value = Mathf.Pow(10, value / 30);
         }
     }
 
@@ -40,7 +45,19 @@ public class S_UI : MonoBehaviour
 		timer.text = string.Format("Canned time: {0:00}:{1:00}", minutes, seconds);
 
 		//score
-		highScore.text = string.Format("Canned cans: {0}", score.score);
+		if (score.score != currentScore)
+		{
+			if (score.score < currentScore)
+			{
+				scoreDown.Play();
+			}
+			else
+			{
+				scoreUp.Play();
+			}
+			currentScore = score.score;
+			highScore.text = string.Format("Canned cans: {0}", currentScore);
+		}
 	}
 
 	public void SetVolume()

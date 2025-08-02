@@ -7,6 +7,7 @@ public class S_CanOpenerLogic : MonoBehaviour
     public int score = 0;
     public float canTurnSpeed = 0.05f;
     public Transform can;
+    public AudioSource canNoise;
 
     private Transform canOpener;
 
@@ -42,10 +43,13 @@ public class S_CanOpenerLogic : MonoBehaviour
         currentAngle = canOpener.transform.eulerAngles.z;
         canOpener.rotation = Quaternion.Euler(0, 0, angle + 90);
         newAngle = canOpener.transform.eulerAngles.z;
-        
+
+        changeInAngle = newAngle - currentAngle;
+
+        canNoise.pitch = Mathf.Abs(Mathf.Clamp(changeInAngle*0.1f, -2, 2));
+
         if (currentAngle != newAngle)
 		{
-        changeInAngle = newAngle - currentAngle;
         if (changeInAngle < 300 && changeInAngle > -300)
 			{
                 totalAngle += changeInAngle;
