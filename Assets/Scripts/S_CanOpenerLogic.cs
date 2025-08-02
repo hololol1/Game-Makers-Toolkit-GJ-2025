@@ -27,6 +27,7 @@ public class S_CanOpenerLogic : MonoBehaviour
     void Start()
     {
         canOpener = this.transform;
+        animator.Play("Opener_Idle");
     }
 
     // Update is called once per frame
@@ -63,15 +64,12 @@ public class S_CanOpenerLogic : MonoBehaviour
 			{
                 sparks.Play();
             }
-            if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Opener_Idle"))
-			{
-                animator.Play("Opener_Idle");
-			}
+            animator.speed = 1f;
         }
 		else
 		{
             sparks.Stop();
-            animator.Play("New_State");
+            animator.speed = 0f;
         }
     }
 
