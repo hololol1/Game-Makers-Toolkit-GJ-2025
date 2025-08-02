@@ -14,7 +14,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: TeamCorn
   productName: GMTKGJ_2025
-  defaultCursor: {fileID: 2800000, guid: a6e26d6edbc8d5a4cb4ba328e897fdfa, type: 3}
+  defaultCursor: {fileID: 2800000, guid: 31fe276a4335b284ba6d32b00553b7ea, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 1, g: 0, b: 0.8286114, a: 1}
   m_ShowUnitySplashScreen: 1
