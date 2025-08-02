@@ -10,6 +10,8 @@ public class S_VOPlayer : MonoBehaviour
     public List<AudioClip> aiVoiceClips = new List<AudioClip>();
     [SerializeField]
     private AudioSource audioSource;
+    [SerializeField]
+    private AudioSource audioSourceKnock;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,6 +21,7 @@ public class S_VOPlayer : MonoBehaviour
 
     void StartVOClip()
 	{
+        audioSourceKnock.Play();
         audioSource.clip = aiVoiceClips[Random.Range(0, aiVoiceClips.Count)];
         audioSource.Play();
 
