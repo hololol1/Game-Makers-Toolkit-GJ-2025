@@ -56,7 +56,7 @@ public class S_UI : MonoBehaviour
 				scoreUp.Play();
 			}
 			currentScore = score.score;
-			highScore.text = string.Format("Canned cans: {0}", currentScore);
+			highScore.text = string.Format("Can Rotations: {0}", currentScore);
 		}
 	}
 

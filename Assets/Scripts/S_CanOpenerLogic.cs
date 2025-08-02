@@ -46,7 +46,7 @@ public class S_CanOpenerLogic : MonoBehaviour
 
         changeInAngle = newAngle - currentAngle;
 
-        canNoise.pitch = Mathf.Abs(Mathf.Clamp(changeInAngle*0.1f, -2, 2));
+        canNoise.pitch = Mathf.Abs(Mathf.Clamp(changeInAngle*0.2f, -2, 2));
 
         if (currentAngle != newAngle)
 		{
