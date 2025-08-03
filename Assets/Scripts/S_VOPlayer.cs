@@ -26,7 +26,7 @@ public class S_VOPlayer : MonoBehaviour
 
 	void StartVOClip()
 	{
-        animator.Play(animNames[Random.Range(0, animNames.Count)]);
+        animator.Play(animNames[Random.Range(0, animNames.Count)], -1, 0f);
         audioSourceKnock.Play();
         audioSource.clip = aiVoiceClips[Random.Range(0, aiVoiceClips.Count)];
         audioSource.Play();
