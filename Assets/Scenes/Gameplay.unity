@@ -555,6 +555,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Can_01_withPlanes (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7840642185015821394, guid: 0129b9bd03e35874f9796e8cfbd330e9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05cb4ae19feb9e74eadbdd148b02be1a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -628,6 +632,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Can_01_withPlanes (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7840642185015821394, guid: 0129b9bd03e35874f9796e8cfbd330e9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05cb4ae19feb9e74eadbdd148b02be1a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -737,6 +745,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Can_01_withPlanes (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7840642185015821394, guid: 0129b9bd03e35874f9796e8cfbd330e9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05cb4ae19feb9e74eadbdd148b02be1a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2161,6 +2173,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Can_01_withPlanes (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7840642185015821394, guid: 0129b9bd03e35874f9796e8cfbd330e9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05cb4ae19feb9e74eadbdd148b02be1a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2234,6 +2250,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Can_01_withPlanes
       objectReference: {fileID: 0}
+    - target: {fileID: 7840642185015821394, guid: 0129b9bd03e35874f9796e8cfbd330e9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05cb4ae19feb9e74eadbdd148b02be1a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2937,6 +2957,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Can_01_withPlanes (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7840642185015821394, guid: 0129b9bd03e35874f9796e8cfbd330e9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05cb4ae19feb9e74eadbdd148b02be1a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3220,6 +3244,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Can_01_withPlanes (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7840642185015821394, guid: 0129b9bd03e35874f9796e8cfbd330e9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05cb4ae19feb9e74eadbdd148b02be1a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3449,6 +3477,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Can_01_withPlanes (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7840642185015821394, guid: 0129b9bd03e35874f9796e8cfbd330e9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05cb4ae19feb9e74eadbdd148b02be1a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4132,6 +4164,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Can_01_withPlanes (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 7840642185015821394, guid: 0129b9bd03e35874f9796e8cfbd330e9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05cb4ae19feb9e74eadbdd148b02be1a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4499,6 +4535,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Can_01_withPlanes (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 7840642185015821394, guid: 0129b9bd03e35874f9796e8cfbd330e9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05cb4ae19feb9e74eadbdd148b02be1a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5126,6 +5166,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Can_01_withPlanes (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7840642185015821394, guid: 0129b9bd03e35874f9796e8cfbd330e9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05cb4ae19feb9e74eadbdd148b02be1a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5199,6 +5243,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Can_01_withPlanes (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 7840642185015821394, guid: 0129b9bd03e35874f9796e8cfbd330e9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05cb4ae19feb9e74eadbdd148b02be1a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
